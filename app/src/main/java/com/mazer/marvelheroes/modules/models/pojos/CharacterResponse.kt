@@ -1,7 +1,8 @@
-package com.mazer.marvelheroes.data
+package com.mazer.marvelheroes.modules.models.pojos
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import com.mazer.marvelheroes.modules.models.Character
 
 class CharacterResponse (
     @SerializedName("code")
@@ -14,10 +15,10 @@ class CharacterResponse (
 
     @SerializedName("data")
     @Expose
-    val data: Data
+    val data: DataChar
 )
 
-class Data(
+class DataChar(
     @SerializedName("offset")
     @Expose
     val offset: Int,

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:contentPadding="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/iv_comic_thumbnail"
+            tools:src="@drawable/hero_placeholder"
+            android:layout_width="0dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="20"
+            android:layout_height="match_parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="80"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_comic_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Here is the HQ NAMe"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/tv_comic_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_comic_title"
+                tools:text="Join 3-D MAN, CLOUD 9, KOMODO, HARDBALL, and heroes around America in the battle that will decide the fate of the planet and the future of the Initiative program. Will the Kill Krew Army win the day?"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/tv_comic_num_pages_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="120"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_num_pages"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_comic_description"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/tv_comic_num_pages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="120"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                tools:text="32"
+                app:layout_constraintStart_toEndOf="@+id/tv_comic_num_pages_label"
+                app:layout_constraintTop_toBottomOf="@+id/tv_comic_description"
+                android:layout_marginStart="8dp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

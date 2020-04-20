@@ -1,4 +1,4 @@
-package com.mazer.marvelheroes.data
+package com.mazer.marvelheroes.modules.api
 
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
@@ -9,10 +9,9 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitHelper {
 
-
-
     fun getInstance(): MarvelHeroesApi {
-        val retrofit = createRetrofitInstance()
+        val retrofit =
+            createRetrofitInstance()
         return retrofit.create(MarvelHeroesApi::class.java)
     }
 

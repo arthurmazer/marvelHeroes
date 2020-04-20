@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Marvel Heroes</string>
+
+    <string name="label_num_pages">Nº de Páginas:</string>
+    <string name="info_not_found">Não encontrado</string>
+    <string name="activity_hero_details_title">Aparições em HQ\'s</string>
+    <string name="loading_more_heros">Carregando mais heróis</string>
+    <string name="error_fetching_heroes">Erro ao carregar lista de heróis</string>
 </resources>

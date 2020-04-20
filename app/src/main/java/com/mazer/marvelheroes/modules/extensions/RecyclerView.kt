@@ -1,4 +1,4 @@
-package com.mazer.marvelheroes.data
+package com.mazer.marvelheroes.modules.extensions
 
 import android.view.LayoutInflater
 import android.view.View

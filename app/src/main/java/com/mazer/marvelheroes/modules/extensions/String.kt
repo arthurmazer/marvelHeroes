@@ -1,4 +1,4 @@
-package com.mazer.marvelheroes.data
+package com.mazer.marvelheroes.modules.extensions
 
 import java.security.MessageDigest
 

@@ -1,6 +1,4 @@
-package com.mazer.marvelheroes.data
-
-import com.mazer.marvelheroes.BuildConfig
+package com.mazer.marvelheroes.modules.api
 
 object MarvelEndpoints {
 
@@ -9,4 +7,5 @@ object MarvelEndpoints {
 
     //endpoints
     const val CHARACTERS = "/v1/public/characters"
+    const val COMICS = "/v1/public/characters/{hero_id}/comics"
 }
